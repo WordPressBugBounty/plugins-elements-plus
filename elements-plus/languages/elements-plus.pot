@@ -2,21 +2,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Elements Plus!\n"
-"POT-Creation-Date: 2024-03-20 20:31+0200\n"
+"POT-Creation-Date: 2025-09-15 18:04+0300\n"
 "PO-Revision-Date: 2016-08-29 19:22+0300\n"
-"Last-Translator: Nik Vourvachis <nvourva@cssigniter.com>\n"
-"Language-Team: Nik Vourvachis <nvourva@cssigniter.com>\n"
+"Last-Translator: CSSIgniter Team <team@cssigniter.com>\n"
+"Language-Team: CSSIgniter Team <team@cssigniter.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: elements-plus.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
@@ -40,7 +39,7 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-#: elements-plus.php:98 inc/elements-plus-options.php:404
+#: elements-plus.php:94 inc/elements-plus-options.php:400
 msgid "Elements Plus!"
 msgstr ""
 
@@ -57,8 +56,8 @@ msgstr ""
 #: elements/ep-caldera-forms.php:387 elements/ep-cf7.php:358
 #: elements/ep-cf7.php:392 elements/ep-countdown.php:132
 #: elements/ep-cta.php:194 elements/ep-cta.php:228
-#: elements/ep-dual-button.php:462 elements/ep-dual-button.php:496
-#: elements/ep-dual-button.php:619 elements/ep-dual-button.php:653
+#: elements/ep-dual-button.php:456 elements/ep-dual-button.php:490
+#: elements/ep-dual-button.php:613 elements/ep-dual-button.php:647
 #: elements/ep-flipclock.php:138 elements/ep-heading.php:241
 #: elements/ep-label.php:165 elements/ep-preloader.php:124
 #: elements/ep-search.php:240 elements/ep-search.php:355
@@ -77,8 +76,8 @@ msgstr ""
 #: elements/ep-countdown.php:282 elements/ep-cta.php:182
 #: elements/ep-cta.php:217 elements/ep-cta.php:340 elements/ep-cta.php:374
 #: elements/ep-cta.php:420 elements/ep-cta.php:454
-#: elements/ep-dual-button.php:450 elements/ep-dual-button.php:485
-#: elements/ep-dual-button.php:607 elements/ep-dual-button.php:642
+#: elements/ep-dual-button.php:444 elements/ep-dual-button.php:479
+#: elements/ep-dual-button.php:601 elements/ep-dual-button.php:636
 #: elements/ep-flipclock.php:206 elements/ep-flipclock.php:314
 #: elements/ep-heading.php:225 elements/ep-justified-gallery.php:234
 #: elements/ep-label.php:153 elements/ep-search.php:225
@@ -176,7 +175,7 @@ msgid "More Text"
 msgstr ""
 
 #: elements/ep-button-plus.php:82 elements/ep-cta.php:92
-#: elements/ep-dual-button.php:129 elements/ep-dual-button.php:275
+#: elements/ep-dual-button.php:129 elements/ep-dual-button.php:272
 #: elements/ep-heading.php:126 elements/ep-icon-plus.php:127
 #: elements/ep-image-accordion.php:74 elements/ep-image-hover-effects.php:81
 #: elements/ep-inline-svg.php:46
@@ -184,7 +183,7 @@ msgid "Link"
 msgstr ""
 
 #: elements/ep-button-plus.php:94 elements/ep-content-toggle.php:161
-#: elements/ep-cta.php:104 elements/ep-dual-button.php:144
+#: elements/ep-cta.php:104 elements/ep-dual-button.php:141
 #: elements/ep-flipclock.php:95 elements/ep-heading.php:161
 #: elements/ep-icon-plus.php:136 elements/ep-inline-svg.php:70
 #: elements/ep-justified-gallery.php:201 elements/ep-label.php:45
@@ -193,7 +192,7 @@ msgid "Alignment"
 msgstr ""
 
 #: elements/ep-button-plus.php:98 elements/ep-content-toggle.php:165
-#: elements/ep-cta.php:108 elements/ep-dual-button.php:148
+#: elements/ep-cta.php:108 elements/ep-dual-button.php:145
 #: elements/ep-flipclock.php:99 elements/ep-heading.php:165
 #: elements/ep-hotspots.php:183 elements/ep-icon-plus.php:140
 #: elements/ep-image-accordion.php:163 elements/ep-inline-svg.php:74
@@ -207,7 +206,7 @@ msgid "Left"
 msgstr ""
 
 #: elements/ep-button-plus.php:102 elements/ep-content-toggle.php:169
-#: elements/ep-cta.php:112 elements/ep-dual-button.php:152
+#: elements/ep-cta.php:112 elements/ep-dual-button.php:149
 #: elements/ep-flipclock.php:103 elements/ep-heading.php:169
 #: elements/ep-icon-plus.php:144 elements/ep-image-accordion.php:164
 #: elements/ep-inline-svg.php:78 elements/ep-justified-gallery.php:209
@@ -218,7 +217,7 @@ msgid "Center"
 msgstr ""
 
 #: elements/ep-button-plus.php:106 elements/ep-content-toggle.php:173
-#: elements/ep-cta.php:116 elements/ep-dual-button.php:156
+#: elements/ep-cta.php:116 elements/ep-dual-button.php:153
 #: elements/ep-flipclock.php:107 elements/ep-heading.php:173
 #: elements/ep-hotspots.php:184 elements/ep-icon-plus.php:148
 #: elements/ep-image-accordion.php:165 elements/ep-inline-svg.php:82
@@ -232,21 +231,21 @@ msgid "Right"
 msgstr ""
 
 #: elements/ep-button-plus.php:110 elements/ep-cta.php:120
-#: elements/ep-dual-button.php:160 elements/ep-justified-gallery.php:217
+#: elements/ep-dual-button.php:157 elements/ep-justified-gallery.php:217
 #: elements/ep-label.php:61 elements/ep-tables.php:104
 #: elements/ep-tables.php:244 elements/ep-tables.php:316
 msgid "Justified"
 msgstr ""
 
 #: elements/ep-button-plus.php:122 elements/ep-cta.php:132
-#: elements/ep-dual-button.php:172 elements/ep-dual-button.php:290
+#: elements/ep-dual-button.php:169 elements/ep-dual-button.php:284
 #: elements/ep-icon-plus.php:204
 msgid "Size"
 msgstr ""
 
 #: elements/ep-button-plus.php:132 elements/ep-countdown.php:113
-#: elements/ep-cta.php:142 elements/ep-dual-button.php:230
-#: elements/ep-dual-button.php:348 elements/ep-flipclock.php:119
+#: elements/ep-cta.php:142 elements/ep-dual-button.php:227
+#: elements/ep-dual-button.php:342 elements/ep-flipclock.php:119
 #: elements/ep-heading.php:187 elements/ep-icon-plus.php:82
 #: elements/ep-justified-gallery.php:134 elements/ep-label.php:120
 #: elements/ep-styled-maps.php:141 elements/ep-video-slider.php:91
@@ -274,8 +273,8 @@ msgstr ""
 #: elements/ep-button-plus.php:165 elements/ep-button-plus.php:323
 #: elements/ep-button-plus.php:390 elements/ep-caldera-forms.php:334
 #: elements/ep-cf7.php:339 elements/ep-cta.php:175 elements/ep-cta.php:333
-#: elements/ep-cta.php:413 elements/ep-dual-button.php:443
-#: elements/ep-dual-button.php:600 elements/ep-heading.php:279
+#: elements/ep-cta.php:413 elements/ep-dual-button.php:437
+#: elements/ep-dual-button.php:594 elements/ep-heading.php:279
 #: elements/ep-wpforms.php:517
 msgid "Normal"
 msgstr ""
@@ -283,14 +282,14 @@ msgstr ""
 #: elements/ep-button-plus.php:200 elements/ep-button-plus.php:344
 #: elements/ep-button-plus.php:411 elements/ep-caldera-forms.php:369
 #: elements/ep-cf7.php:374 elements/ep-cta.php:210 elements/ep-cta.php:367
-#: elements/ep-cta.php:447 elements/ep-dual-button.php:478
-#: elements/ep-dual-button.php:635 elements/ep-wpforms.php:552
+#: elements/ep-cta.php:447 elements/ep-dual-button.php:472
+#: elements/ep-dual-button.php:629 elements/ep-wpforms.php:552
 msgid "Hover"
 msgstr ""
 
 #: elements/ep-button-plus.php:229 elements/ep-caldera-forms.php:398
 #: elements/ep-cf7.php:403 elements/ep-cta.php:239
-#: elements/ep-dual-button.php:507 elements/ep-dual-button.php:664
+#: elements/ep-dual-button.php:501 elements/ep-dual-button.php:658
 #: elements/ep-wpforms.php:581
 msgid "Border Color"
 msgstr ""
@@ -310,8 +309,8 @@ msgstr ""
 #: elements/ep-caldera-forms.php:299 elements/ep-caldera-forms.php:427
 #: elements/ep-cf7.php:195 elements/ep-cf7.php:304 elements/ep-cf7.php:432
 #: elements/ep-cf7.php:526 elements/ep-countdown.php:156
-#: elements/ep-cta.php:276 elements/ep-dual-button.php:544
-#: elements/ep-dual-button.php:701 elements/ep-flipclock.php:164
+#: elements/ep-cta.php:276 elements/ep-dual-button.php:538
+#: elements/ep-dual-button.php:695 elements/ep-flipclock.php:164
 #: elements/ep-icon-plus.php:270 elements/ep-justified-gallery.php:163
 #: elements/ep-label.php:193 elements/ep-pricing-list.php:122
 #: elements/ep-wpforms.php:409 elements/ep-wpforms.php:482
@@ -397,7 +396,7 @@ msgid "Form Button"
 msgstr ""
 
 #: elements/ep-caldera-forms.php:447 elements/ep-cf7.php:452
-#: elements/ep-dual-button.php:564 elements/ep-dual-button.php:721
+#: elements/ep-dual-button.php:558 elements/ep-dual-button.php:715
 #: elements/ep-heading.php:303 elements/ep-icon-plus.php:221
 #: elements/ep-pricing-list.php:195 elements/ep-search.php:263
 #: elements/ep-search.php:378 elements/ep-search.php:470
@@ -654,97 +653,92 @@ msgstr ""
 msgid "Dual Button Plus!"
 msgstr ""
 
-#: elements/ep-dual-button.php:116 elements/ep-dual-button.php:262
+#: elements/ep-dual-button.php:116 elements/ep-dual-button.php:259
 #: elements/ep-image-accordion.php:70 elements/ep-label.php:35
 msgid "Text"
 msgstr ""
 
 #: elements/ep-dual-button.php:121 elements/ep-dual-button.php:122
-#: elements/ep-dual-button.php:267 elements/ep-dual-button.php:268
+#: elements/ep-dual-button.php:264 elements/ep-dual-button.php:265
 msgid "Click here"
 msgstr ""
 
-#: elements/ep-dual-button.php:134 elements/ep-dual-button.php:280
-#: elements/ep-icon-plus.php:129 elements/ep-image-accordion.php:76
-msgid "https://your-link.com"
-msgstr ""
-
-#: elements/ep-dual-button.php:183 elements/ep-dual-button.php:301
+#: elements/ep-dual-button.php:180 elements/ep-dual-button.php:295
 #: elements/ep-hotspots.php:68 elements/ep-hotspots.php:89
 #: elements/ep-icon-plus.php:99 elements/ep-icon-plus.php:164
 #: elements/ep-label.php:73
 msgid "Icon"
 msgstr ""
 
-#: elements/ep-dual-button.php:194 elements/ep-dual-button.php:312
+#: elements/ep-dual-button.php:191 elements/ep-dual-button.php:306
 #: elements/ep-label.php:84
 msgid "Icon Position"
 msgstr ""
 
-#: elements/ep-dual-button.php:198 elements/ep-dual-button.php:316
+#: elements/ep-dual-button.php:195 elements/ep-dual-button.php:310
 #: elements/ep-image-comparison.php:86 elements/ep-label.php:88
 msgid "Before"
 msgstr ""
 
-#: elements/ep-dual-button.php:199 elements/ep-dual-button.php:317
+#: elements/ep-dual-button.php:196 elements/ep-dual-button.php:311
 #: elements/ep-image-comparison.php:95 elements/ep-label.php:89
 msgid "After"
 msgstr ""
 
-#: elements/ep-dual-button.php:210 elements/ep-dual-button.php:328
+#: elements/ep-dual-button.php:207 elements/ep-dual-button.php:322
 #: elements/ep-label.php:100
 msgid "Icon Spacing"
 msgstr ""
 
-#: elements/ep-dual-button.php:239 elements/ep-dual-button.php:357
+#: elements/ep-dual-button.php:236 elements/ep-dual-button.php:351
 msgid "Button ID"
 msgstr ""
 
-#: elements/ep-dual-button.php:242 elements/ep-dual-button.php:360
+#: elements/ep-dual-button.php:239 elements/ep-dual-button.php:354
 msgid "Add your custom id WITHOUT the Pound key. e.g: my-id"
 msgstr ""
 
-#: elements/ep-dual-button.php:244 elements/ep-dual-button.php:362
+#: elements/ep-dual-button.php:241 elements/ep-dual-button.php:356
 msgid ""
 "Please make sure the ID is unique and not used elsewhere on the page this "
 "form is displayed. This field allows <code>A-z 0-9</code> & underscore "
 "chars without spaces."
 msgstr ""
 
-#: elements/ep-dual-button.php:255 elements/ep-dual-button.php:579
+#: elements/ep-dual-button.php:252 elements/ep-dual-button.php:573
 msgid "Button 2"
 msgstr ""
 
-#: elements/ep-dual-button.php:373 elements/ep-dual-button.php:381
+#: elements/ep-dual-button.php:367 elements/ep-dual-button.php:375
 msgid "Button Layout"
 msgstr ""
 
-#: elements/ep-dual-button.php:385 elements/ep-image-comparison.php:76
+#: elements/ep-dual-button.php:379 elements/ep-image-comparison.php:76
 msgid "Vertical"
 msgstr ""
 
-#: elements/ep-dual-button.php:386 elements/ep-image-comparison.php:75
+#: elements/ep-dual-button.php:380 elements/ep-image-comparison.php:75
 msgid "Horizontal"
 msgstr ""
 
-#: elements/ep-dual-button.php:394 elements/ep-heading.php:316
+#: elements/ep-dual-button.php:388 elements/ep-heading.php:316
 #: elements/ep-pricing-list.php:207 elements/ep-search.php:275
 #: elements/ep-search.php:390 elements/ep-search.php:482
 msgid "Margin"
 msgstr ""
 
-#: elements/ep-dual-button.php:413
+#: elements/ep-dual-button.php:407
 msgid ""
 "Use the margin controls above to change the spacing between the buttons. "
 "Right margin affects the horizontal layout spacing and bottom margin the "
 "vertical one."
 msgstr ""
 
-#: elements/ep-dual-button.php:422
+#: elements/ep-dual-button.php:416
 msgid "Button 1"
 msgstr ""
 
-#: elements/ep-dual-button.php:521 elements/ep-dual-button.php:678
+#: elements/ep-dual-button.php:515 elements/ep-dual-button.php:672
 #: elements/ep-icon-plus.php:324
 msgid "Hover Animation"
 msgstr ""
@@ -1513,11 +1507,11 @@ msgstr ""
 msgid "Search result item thumbnail"
 msgstr ""
 
-#: elements/ep-search.php:805
+#: elements/ep-search.php:808
 msgid "All Post Types"
 msgstr ""
 
-#: elements/ep-search.php:830
+#: elements/ep-search.php:833
 msgid "All Taxonomies"
 msgstr ""
 
@@ -1771,10 +1765,6 @@ msgstr ""
 
 #: elements/ep-video-slider.php:53
 msgid "Video URL"
-msgstr ""
-
-#: elements/ep-video-slider.php:60
-msgid "http://your-video-url"
 msgstr ""
 
 #: elements/ep-video-slider.php:64 elements/ep-video-slider.php:67
@@ -2183,7 +2173,7 @@ msgstr ""
 msgid "Create a slideshow using your favorite YouTube videos."
 msgstr ""
 
-#: inc/elements-plus-options.php:406
+#: inc/elements-plus-options.php:402
 msgid "Use the checkboxes below to enable or disable the custom elements."
 msgstr ""
 

@@ -126,15 +126,12 @@ class Widget_Dual_Button_Plus extends Widget_Base {
 		$this->add_control(
 			'button_1_link',
 			[
-				'label' => __( 'Link', 'elements-plus' ),
-				'type' => Controls_Manager::URL,
-				'dynamic' => [
+				'label'       => __( 'Link', 'elements-plus' ),
+				'type'        => Controls_Manager::URL,
+				'dynamic'     => [
 					'active' => true,
 				],
-				'placeholder' => __( 'https://your-link.com', 'elements-plus' ),
-				'default' => [
-					'url' => '#',
-				],
+				'placeholder' => 'https://',
 			]
 		);
 
@@ -277,10 +274,7 @@ class Widget_Dual_Button_Plus extends Widget_Base {
 				'dynamic' => [
 					'active' => true,
 				],
-				'placeholder' => __( 'https://your-link.com', 'elements-plus' ),
-				'default' => [
-					'url' => '#',
-				],
+				'placeholder' => 'https://',
 			]
 		);
 

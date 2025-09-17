@@ -62,7 +62,7 @@
 			$this->add_control(
 				'open_lightbox',
 				[
-					'label'     => __( 'Lightbox', 'elementor' ),
+					'label'     => __( 'Lightbox', 'elements-plus' ),
 					'type'      => Controls_Manager::SELECT,
 					'default'   => 'default',
 					'options'   => [

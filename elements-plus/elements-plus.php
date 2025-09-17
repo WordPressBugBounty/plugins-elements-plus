@@ -4,8 +4,10 @@
  * Description: Custom elements for the Elementor page builder by CSSIgniter.com
  * Plugin URI: https://cssigniter.com/plugins/elements-plus/
  * Author: The CSSIgniter Team
- * Version: 2.16.4
+ * Version: 2.16.5
  * Author URI: https://cssigniter.com/
+ * License: GNU General Public License v2.0 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: elements-plus
  * Domain Path: /languages
  *
@@ -30,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'plugins_loaded', 'elements_plus_init' );
 function elements_plus_init() {
 
-	define( 'ELEMENTS_PLUS_VERSION', '2.16.4' );
+	define( 'ELEMENTS_PLUS_VERSION', '2.16.5' );
 	define( 'ELEMENTS_PLUS_URL', plugins_url( '/', __FILE__ ) );
 	define( 'ELEMENTS_PLUS_PATH', plugin_dir_path( __FILE__ ) );
 
@@ -51,8 +53,6 @@ function elements_plus_init() {
 
 		return;
 	}
-
-	add_action( 'init', 'elements_plus_load_plugin_textdomain' );
 
 	add_action( 'elementor/init', 'elements_plus_category' );
 
@@ -85,10 +85,6 @@ function elements_plus_fail_php_version() {
 	$message      = esc_html__( 'Elements Plus! requires PHP version 5.4+, the plugin is currently NOT ACTIVE.', 'elements-plus' );
 	$html_message = sprintf( '<div class="error">%s</div>', wpautop( $message ) );
 	echo wp_kses_post( $html_message );
-}
-
-function elements_plus_load_plugin_textdomain() {
-	load_plugin_textdomain( 'elements-plus', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 
 function elements_plus_category() {
@@ -451,8 +447,8 @@ function elements_plus_scripts() {
 	}
 
 	if ( 1 === $hotspots ) {
-		wp_register_style( 'tipso', ELEMENTS_PLUS_URL . 'assets/css/tipso.min.css', array(), ELEMENTS_PLUS_VERSION );
-		wp_register_script( 'tipso', ELEMENTS_PLUS_URL . 'assets/js/tipso.min.js', array( 'jquery' ), ELEMENTS_PLUS_VERSION, true );
+		wp_register_style( 'tipso', ELEMENTS_PLUS_URL . 'assets/css/tipso.min.css', array(), '1.0.8' );
+		wp_register_script( 'tipso', ELEMENTS_PLUS_URL . 'assets/js/tipso.min.js', array( 'jquery' ), '1.0.8', true );
 
 		wp_register_style( 'ep-hotspots', ELEMENTS_PLUS_URL . 'assets/css/ep-hotspots.css', array(), ELEMENTS_PLUS_VERSION );
 		wp_register_script( 'ep-hotspots', ELEMENTS_PLUS_URL . 'assets/js/ep-hotspots.js', array( 'jquery', 'tipso' ), ELEMENTS_PLUS_VERSION, true );

@@ -215,7 +215,7 @@ class Widget_EP_Content_Toggle extends Widget_Base {
 		$this->add_control(
 			'bottom_margin',
 			[
-				'label'     => __( 'Bottom Margin', 'plugin-domain' ),
+				'label'     => __( 'Bottom Margin', 'elements-plus' ),
 				'type'      => Controls_Manager::NUMBER,
 				'min'       => 0,
 				'max'       => 300,

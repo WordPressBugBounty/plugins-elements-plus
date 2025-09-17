@@ -341,16 +341,22 @@ class Widget_Hotspots extends Widget_Base {
 				$migrated = isset( $settings['__fa4_migrated']['marker_icon_fa5'] );
 				$is_new   = empty( $marker['marker_icon'] );
 
+				$tooltip_content = wp_specialchars_decode( $marker['tooltip_text'], ENT_QUOTES );
+				$tooltip_content = wp_kses_post( $tooltip_content );
 				$tooltip_content = wp_kses_post( sprintf( '<div class="ep-tipso-content">%s</div>',
-					$marker['tooltip_text']
+					$tooltip_content
 				) );
+
+				$tooltip_title = wp_specialchars_decode( $marker['tooltip_title'], ENT_QUOTES );
+				$tooltip_title = wp_kses_post( $tooltip_title );
 				$tooltip_title = wp_kses_post( sprintf( '<h3 class="ep-tipso-title">%s</h3>',
-					$marker['tooltip_title']
+					$tooltip_title
 				) );
+
 				?>
 					<div class="ep-map-item ep-map-item-<?php echo esc_attr( $marker['_id'] ); ?>"
-					style="left:<?php echo intval( $marker['marker_position_x']['size'] ); ?>%;top:<?php echo intval( $marker['marker_position_y']['size'] ); ?>%;"
-					data-show-tooltip = "<?php echo esc_attr( $marker['show_tooltip'] ); ?>"
+					style="left:<?php echo esc_attr( (int) $marker['marker_position_x']['size'] ); ?>%;top:<?php echo esc_attr( (int) $marker['marker_position_y']['size'] ); ?>%;"
+					data-show-tooltip="<?php echo esc_attr( $marker['show_tooltip'] ); ?>"
 					data-tipso-content="<?php echo esc_attr( $tooltip_content ); ?>"
 					data-tipso-background="<?php echo esc_attr( $settings['popup_bg_color'] ); ?>"
 					data-tipso-color="<?php echo esc_attr( $settings['popup_text_color'] ); ?>"
@@ -401,15 +407,15 @@ class Widget_Hotspots extends Widget_Base {
 			<# _.each( settings.markers, function( marker ) { #>
 				<# var iconHTML = elementor.helpers.renderIcon( view, marker.marker_icon_fa5, { 'aria-hidden': true }, 'i' , 'object' ); #>
 				<div class="ep-map-item ep-map-item-{{ marker._id }}" style="left:{{marker.marker_position_x.size}}%;top:{{marker.marker_position_y.size}}%;"
-				data-show-tooltip = "{{marker.show_tooltip}}"
+				data-show-tooltip = "{{ marker.show_tooltip }}"
 				data-tipso-content="{{ marker.tooltip_text }}"
-				data-tipso-background="{{settings.popup_bg_color}}"
-				data-tipso-color="{{settings.popup_text_color}}"
-				data-tipso-titleColor="{{settings.popup_text_color}}"
-				data-tipso-titleBackground="{{settings.popup_bg_color}}"
-				data-tipso-titleContent="<h3>{{marker.tooltip_title}}</h3>"
-				data-tipso-width="{{settings.popup_width.size}}"
-				data-tipso-position="{{marker.tooltip_position}}">
+				data-tipso-background="{{ settings.popup_bg_color }}"
+				data-tipso-color="{{ settings.popup_text_color }}"
+				data-tipso-titleColor="{{ settings.popup_text_color }}"
+				data-tipso-titleBackground="{{ settings.popup_bg_color }}"
+				data-tipso-titleContent="{{ marker.tooltip_title }}"
+				data-tipso-width="{{ settings.popup_width.size }}"
+				data-tipso-position="{{ marker.tooltip_position }}">
 					<span class="ep-marker ep-marker-{{ marker._id }}">
 						<span class="ep-marker-inner">
 							<# if ( 'label' === marker.marker_type ) { #>

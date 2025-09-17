@@ -126,7 +126,7 @@ class Widget_Icon_Plus extends Widget_Base {
 			[
 				'label' => __( 'Link', 'elements-plus' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'https://your-link.com', 'elements-plus' ),
+				'placeholder' => 'https://',
 			]
 		);
 

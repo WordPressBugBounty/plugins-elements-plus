@@ -148,8 +148,8 @@ class Widget_Tables extends Widget_Base {
 						'name'         => 'new_row',
 						'label'        => __( 'New Row', 'elements-plus' ),
 						'type'         => \Elementor\Controls_Manager::SWITCHER,
-						'label_on'     => __( 'On', 'your-plugin' ),
-						'label_off'    => __( 'Off', 'your-plugin' ),
+						'label_on'     => __( 'On', 'elements-plus' ),
+						'label_off'    => __( 'Off', 'elements-plus' ),
 						'return_value' => 'yes',
 						'default'      => '',
 					],
@@ -372,13 +372,13 @@ class Widget_Tables extends Widget_Base {
 	}
 
 	protected function render() {
-		$settings     = $this->get_settings();
-		$table_header = $settings['table_header'];
-		$table_body   = $settings['table_body'];
-		$responsive   = 'yes' === $settings['responsive_tables'] ? 'ep-table-responsive' : '';
+		$settings         = $this->get_settings();
+		$table_header     = $settings['table_header'];
+		$table_body       = $settings['table_body'];
+		$responsive_class = 'yes' === $settings['responsive_tables'] ? 'ep-table-responsive' : '';
 
 		?>
-		<table class="ep-table <?php echo esc_attr( $responsive ); ?>">
+		<table class="ep-table <?php echo esc_attr( $responsive_class ); ?>">
 			<thead class="ep-table-head">
 				<tr>
 					<?php

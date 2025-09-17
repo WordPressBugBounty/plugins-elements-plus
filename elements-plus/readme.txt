@@ -1,14 +1,14 @@
 === Elements Plus! ===
-Contributors: cssigniterteam, nvourva, tsiger, anastis, silencerius
-Tags: elements plus, elementor, elementor widgets, custom widgets, custom elements, page builder
+Contributors: cssigniterteam, tsiger, anastis, silencerius
+Tags: custom elements, custom widgets, widgets for elementor, elementor widgets, elementor templates
 Requires at least: 6.1
-Tested up to: 6.4.3
+Tested up to: 6.8
 Requires PHP: 5.4
-Stable tag: 2.16.4
+Stable tag: 2.16.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Elements Plus! provides awesome custom widgets for the Elementor page builder. AudioIgniter, Button, Caldera Forms, Call to Action, Contact Form 7, Content Toggle, Countdown, Dual Button, FlipClock, Gallery, Google Maps, Heading, Hotspots, Icon, Image Accordion, Image Comparison, Image Hover Effects, Inline SVG, Instagram Filters, Label, Preloader, Pricing List, Scheduled visibility, Search, Sticky Videos, Tables, Tilt Effect, Tooltip, WPForms and YouTube Slideshow widgets are available.
+Elements Plus! provides awesome custom widgets for the Elementor page builder. Buttons, Toggles, Gallery, Hotspots, and so much more!
 
 == Description ==
 Elements Plus! is a plugin for the popular Elementor page builder. It gives the user thirty one extra 'elements' (widgets) to use.
@@ -103,6 +103,10 @@ Manually via FTP:
 3. The justified gallery widget
 
 == Changelog ==
+
+= 2.16.5 =
+* Improved sanitization. Fixes CVE-2025-8689 (props zer0gh0st).
+* Fixed gettext domain issues.
 
 = 2.16.4 =
 * Properly escape all output. Fixes Cross Site Scripting (XSS) issues (props Abu Hurayra).

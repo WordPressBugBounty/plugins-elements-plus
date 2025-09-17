@@ -35,7 +35,7 @@
 			$this->add_control(
 				'playlist',
 				[
-					'label'     => __( 'Playlist', 'your-plugin' ),
+					'label'     => __( 'Playlist', 'elements-plus' ),
 					'type'      => Controls_Manager::SELECT,
 					'default'   => '',
 					'options'   => $this->get_playlists(),

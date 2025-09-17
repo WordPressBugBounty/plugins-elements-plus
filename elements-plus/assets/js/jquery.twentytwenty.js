@@ -25,8 +25,14 @@
       if(!options.no_overlay) {
         container.append("<div class='twentytwenty-overlay'></div>");
         var overlay = container.find(".twentytwenty-overlay");
-        overlay.append("<div class='twentytwenty-before-label' data-content='"+options.before_label+"'></div>");
-        overlay.append("<div class='twentytwenty-after-label' data-content='"+options.after_label+"'></div>");
+        var beforeLabel = document.createElement('div');
+        beforeLabel.className = 'twentytwenty-before-label';
+        beforeLabel.dataset.content = options.before_label;
+        var afterLabel = document.createElement('div');
+        afterLabel.className = 'twentytwenty-after-label';
+        afterLabel.dataset.content = options.after_label;
+        overlay.append(beforeLabel);
+        overlay.append(afterLabel);
       }
       var beforeImg = container.find("img:first");
       var afterImg = container.find("img:last");

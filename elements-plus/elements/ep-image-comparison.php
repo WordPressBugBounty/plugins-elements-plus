@@ -114,8 +114,8 @@
 				[
 					'label' => __( 'Move Slider On Hover', 'elements-plus' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => __( 'Yes', 'your-plugin' ),
-					'label_off' => __( 'No', 'your-plugin' ),
+					'label_on' => __( 'Yes', 'elements-plus' ),
+					'label_off' => __( 'No', 'elements-plus' ),
 					'return_value' => 'true',
 					'default' => 'false',
 				]
@@ -126,8 +126,8 @@
 				[
 					'label' => __( 'Move Slider By Clicking Anywhere', 'elements-plus' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => __( 'Yes', 'your-plugin' ),
-					'label_off' => __( 'No', 'your-plugin' ),
+					'label_on' => __( 'Yes', 'elements-plus' ),
+					'label_off' => __( 'No', 'elements-plus' ),
 					'return_value' => 'true',
 					'default' => 'true',
 				]
@@ -138,8 +138,8 @@
 				[
 					'label' => __( 'Move Slider Only With Handle', 'elements-plus' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => __( 'Yes', 'your-plugin' ),
-					'label_off' => __( 'No', 'your-plugin' ),
+					'label_on' => __( 'Yes', 'elements-plus' ),
+					'label_off' => __( 'No', 'elements-plus' ),
 					'return_value' => 'true',
 					'default' => 'false',
 				]
@@ -153,12 +153,16 @@
 			$settings     = $this->get_settings();
 			$offset       = $settings['offset']['size'];
 			$orientation  = $settings['orientation'];
-			$before_label = $settings['before_label'];
-			$after_label  = $settings['after_label'];
 			$overlay      = $settings['overlay'];
 			$hover        = $settings['hover'];
 			$handle       = $settings['handle'];
 			$click        = $settings['click'];
+
+			$before_label = wp_specialchars_decode( $settings['before_label'], ENT_QUOTES );
+			$before_label = wp_kses( $before_label, 'strip' );
+
+			$after_label = wp_specialchars_decode( $settings['after_label'], ENT_QUOTES );
+			$after_label = wp_kses( $after_label, 'strip' );
 
 			if ( 'true' === $handle ) {
 				$click = false;

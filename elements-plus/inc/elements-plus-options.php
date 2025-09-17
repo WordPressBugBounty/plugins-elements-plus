@@ -288,30 +288,26 @@ class Elements_Plus extends \Elementor\Settings {
 			?>
 			<div class="elements-plus-setting">
 				<h2>
-				<?php
-				echo wp_kses(
-					$value['title'],
-					array(
-						'em' => true,
-					)
-				);
-				?>
+					<?php echo wp_kses(
+						$value['title'],
+						array(
+							'em' => true,
+						)
+					); ?>
 				</h2>
 				<label for="<?php echo esc_attr( $key ); ?>">
 
 				<?php if ( isset( $value['plugin'] ) && ! elements_plus_is_plugin_active( $value['plugin'] ) ) : ?>
 					<p>
-					<?php
-					echo wp_kses(
-						$value['warning'],
-						array(
-							'a' => array(
-								'href'   => true,
-								'target' => true,
-							),
-						)
-					);
-					?>
+						<?php echo wp_kses(
+							$value['warning'],
+							array(
+								'a' => array(
+									'href'   => true,
+									'target' => true,
+								),
+							)
+						); ?>
 					</p>
 
 				<?php elseif ( 'api_maps' === $key ) : ?>

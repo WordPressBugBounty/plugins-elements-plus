@@ -57,7 +57,7 @@
 								'url'         => '',
 								'is_external' => false,
 							],
-							'placeholder' => __( 'http://your-video-url', 'elements-plus' ),
+							'placeholder' => 'https://',
 						],
 						[
 							'name'        => 'text',
@@ -221,7 +221,9 @@
 					<?php foreach ( $settings['video-list'] as $video ) {
 						$url = empty( $video['video_url']['url'] ) ? '#' : esc_url_raw( $video['video_url']['url'] );
 
-						?><div class="ep-video-slide"><?php echo wp_oembed_get( $url ); ?></div><?php
+						?><div class="ep-video-slide"><?php
+							echo wp_oembed_get( $url ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+						?></div><?php
 					} ?>
 				</div>
 				<div class="ep-slider-item ep-slider-nav <?php echo esc_attr( $position ); ?>">

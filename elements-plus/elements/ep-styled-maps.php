@@ -162,8 +162,20 @@
 
 			$map_style = ! empty( $settings['user_style'] ) ? $settings['user_style'] : elements_plus_get_map_style( $settings['style'] );
 
+			$info = wp_specialchars_decode( $settings['info'], ENT_QUOTES );
+			$info = wp_kses( $info, 'strip' );
 		?>
-			<div id="map-<?php echo esc_attr( $this->get_id() ); ?>" style="width:100%;height:<?php echo esc_attr( $settings['height']['size'] ); ?>px;background-color: grey;" data-latitude="<?php echo esc_attr( $settings['latitude'] ); ?>" data-longitude="<?php echo esc_attr( $settings['longitude'] ); ?>" data-zoom="<?php echo esc_attr( $settings['zoom']['size'] ); ?>" data-style="<?php echo esc_attr( $map_style ); ?>" data-scroll="<?php echo esc_attr( $pointer_events ); ?>" data-icon="<?php echo esc_url( $settings['marker']['url'] ); ?>" data-info="<?php echo esc_html( $settings['info'] ); ?>" data-error="<?php echo esc_attr( $data_error ); ?>"></div>
+			<div
+				id="map-<?php echo esc_attr( $this->get_id() ); ?>"
+				style="width:100%;height:<?php echo esc_attr( $settings['height']['size'] ); ?>px;background-color: grey;"
+				data-latitude="<?php echo esc_attr( $settings['latitude'] ); ?>"
+				data-longitude="<?php echo esc_attr( $settings['longitude'] ); ?>"
+				data-zoom="<?php echo esc_attr( $settings['zoom']['size'] ); ?>"
+				data-style="<?php echo esc_attr( $map_style ); ?>"
+				data-scroll="<?php echo esc_attr( $pointer_events ); ?>"
+				data-icon="<?php echo esc_url( $settings['marker']['url'] ); ?>"
+				data-info="<?php echo esc_attr( $info ); ?>"
+				data-error="<?php echo esc_attr( $data_error ); ?>"></div>
 			<script>
 				jQuery(document).ready(function(){
 					jQuery(document).trigger('elementor/render/ep_styled_maps','#map-<?php echo esc_attr( $this->get_id() ); ?>');

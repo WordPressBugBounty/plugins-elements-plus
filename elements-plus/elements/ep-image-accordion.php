@@ -40,7 +40,7 @@ class EP_Image_Accordion extends Widget_Base {
 				'fields'      => [
 					[
 						'name'    => 'accordion_image',
-						'label'   => __( 'Choose Image', 'plugin-domain' ),
+						'label'   => __( 'Choose Image', 'elements-plus' ),
 						'type'    => Controls_Manager::MEDIA,
 						'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -71,9 +71,9 @@ class EP_Image_Accordion extends Widget_Base {
 					],
 					[
 						'name'          => 'accordion_item_url',
-						'label'         => __( 'Link', 'plugin-domain' ),
+						'label'         => __( 'Link', 'elements-plus' ),
 						'type'          => Controls_Manager::URL,
-						'placeholder'   => __( 'https://your-link.com', 'plugin-domain' ),
+						'placeholder'   => 'https://',
 						'show_external' => true,
 						'default'       => [
 							'url'         => '',

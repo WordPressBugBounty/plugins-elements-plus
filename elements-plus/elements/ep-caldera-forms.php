@@ -507,7 +507,7 @@ class Widget_EP_Caldera extends Widget_Base {
 			?><h5 class="widget-title"><?php $this->print_unescaped_setting( 'widget_title' ); ?></h5><?php
 		}
 
-		echo \Caldera_Forms::render_form( $form_id );
+		echo \Caldera_Forms::render_form( $form_id ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 	}
 

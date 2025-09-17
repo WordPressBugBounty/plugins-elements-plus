@@ -683,8 +683,8 @@
 						<span class="element-search-spinner"></span>
 						<input type="hidden" name="post_type" value="<?php echo esc_attr( $post_type ); ?>" />
 						<input type="hidden" name="taxonomy" value="<?php echo esc_attr( $taxonomy ); ?>" />
-						<input type="hidden" name="num_posts" value="<?php echo intval( $num_posts ); ?>" />
-						<input type="hidden" name="num_words" value="<?php echo intval( $num_words ); ?>" />
+						<input type="hidden" name="num_posts" value="<?php echo (int) $num_posts; ?>" />
+						<input type="hidden" name="num_words" value="<?php echo (int) $num_words; ?>" />
 					</div>
 					<?php if ( 'yes' === $show_button ) : ?>
 						<button type="submit" class="element-search-btn">
@@ -697,7 +697,7 @@
 							<a href="">
 								<?php if ( 'yes' === $show_thumb ) : ?>
 									<div class="element-search-results-item-thumb">
-										<img src="" alt="<?php esc_attr_e( 'Search result item thumbnail' ); ?>">
+										<img src="" alt="<?php esc_attr_e( 'Search result item thumbnail', 'elements-plus' ); ?>">
 									</div>
 								<?php endif; ?>
 								<div class="element-search-results-item-content">
@@ -727,12 +727,15 @@
 	add_action( 'wp_ajax_elements_plus_search', 'Elementor\elements_plus_ajax_search' );
 	add_action( 'wp_ajax_nopriv_elements_plus_search', 'Elementor\elements_plus_ajax_search' );
 	function elements_plus_ajax_search() {
+		// Disable nonce verification checks. This is just a search request, just like WordPress's.
+		// phpcs:disable WordPress.Security.NonceVerification.Recommended
 		$s         = isset( $_GET['s'] ) ? sanitize_text_field( wp_unslash( $_GET['s'] ) ) : ''; // Input var okay.
 		$cat       = isset( $_GET['term'] ) ? sanitize_title_for_query( wp_unslash( $_GET['term'] ) ) : false; // Input var okay.
 		$post_type = isset( $_GET['post_type'] ) ? sanitize_text_field( wp_unslash( $_GET['post_type'] ) ) : 'post'; // Input var okay.
 		$taxonomy  = isset( $_GET['post_taxonomy'] ) ? sanitize_text_field( wp_unslash( $_GET['post_taxonomy'] ) ) : ''; // Input var okay.
-		$num_posts = isset( $_GET['num_posts'] ) ? intval( $_GET['num_posts'] ) : 5; // Input var okay.
-		$num_words = isset( $_GET['num_words'] ) ? intval( $_GET['num_words'] ) : 55; // Input var okay.
+		$num_posts = isset( $_GET['num_posts'] ) ? (int) $_GET['num_posts'] : 5; // Input var okay.
+		$num_words = isset( $_GET['num_words'] ) ? (int) $_GET['num_words'] : 55; // Input var okay.
+		// phpcs:enable WordPress.Security.NonceVerification.Recommended
 
 		if ( 'any' === $post_type ) {
 			$post_type = ep_search_post_types();

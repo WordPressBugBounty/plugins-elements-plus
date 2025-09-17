@@ -346,9 +346,9 @@
 				return;
 			}
 
-			$label = 'yes' === $settings['toggle_labels'] ? '' : 'no-label';
-			$now   = current_time( 'timestamp' );
-			$diff  = $time_out - $now;
+			$label_class = 'yes' === $settings['toggle_labels'] ? '' : 'no-label';
+			$now         = current_time( 'timestamp' );
+			$diff        = $time_out - $now;
 
 			// 'MinuteCounter' face doesn't play nice with anything more than 99:59, so fallback to Hourly counter instead.
 			if ( 'MinuteCounter' === $clockface && $diff >= 6000 ) {
@@ -357,7 +357,7 @@
 			?>
 			<div id="flipclock-<?php echo esc_attr( $this->get_id() ); ?>" class="ep-flipclock-container" data-time="<?php echo intval( $diff ); ?>" data-end-text="<?php echo esc_attr( $settings['end_text'] ); ?>" data-clockface="<?php echo esc_attr( $clockface ); ?>" data-seconds="<?php echo esc_attr( $settings['toggle_seconds'] ); ?>">
 				<?php if ( $diff > 0 ) { ?>
-					<div class="clock <?php echo esc_attr( $label ); ?>"></div>
+					<div class="clock <?php echo esc_attr( $label_class ); ?>"></div>
 					<div class="message"></div>
 				<?php } else { ?>
 					<p class="expired"><?php echo esc_html( $settings['end_text'] ); ?></p>
